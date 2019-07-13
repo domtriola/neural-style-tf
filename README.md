@@ -239,10 +239,13 @@ Here we reproduce Figure 3 from [the original paper](https://arxiv.org/abs/1508.
 </tr>
 </table>
 
-*Rows*: increasing subsets of CNN layers; i.e. 'conv4_1' means using 'conv1_1', 'conv2_1', 'conv3_1', 'conv4_1'.   
+*Rows*: increasing subsets of CNN layers; i.e. 'conv4_1' means using 'conv1_1', 'conv2_1', 'conv3_1', 'conv4_1'.
 *Columns*: alpha/beta ratio of the the content and style reconstruction (see Content / Style Tradeoff).
 
 ## Setup
+
+[Easy Mac setup](./setup#mac)
+
 #### Dependencies:
 * [tensorflow](https://github.com/tensorflow/tensorflow)
 * [opencv](http://opencv.org/downloads.html)
