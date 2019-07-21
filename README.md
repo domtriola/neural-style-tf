@@ -1,12 +1,12 @@
 # neural-style-tf
 
-This is a TensorFlow implementation of several techniques described in the papers: 
+This is a TensorFlow implementation of several techniques described in the papers:
 * [Image Style Transfer Using Convolutional Neural Networks](http://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Gatys_Image_Style_Transfer_CVPR_2016_paper.pdf)
 by Leon A. Gatys, Alexander S. Ecker, Matthias Bethge
 * [Artistic style transfer for videos](https://arxiv.org/abs/1604.08610)
 by Manuel Ruder, Alexey Dosovitskiy, Thomas Brox
 * [Preserving Color in Neural Artistic Style Transfer](https://arxiv.org/abs/1606.05897)
-by Leon A. Gatys, Matthias Bethge, Aaron Hertzmann, Eli Shechtman  
+by Leon A. Gatys, Matthias Bethge, Aaron Hertzmann, Eli Shechtman
 
 Additionally, techniques are presented for semantic segmentation and multiple style transfer.
 
@@ -27,7 +27,7 @@ Transferring the style of various artworks to the same content image produces qu
 <img src="examples/lions/wave_output.png" width="192"/>
 <img src="examples/lions/styles/wave_crop.jpg" width="192"/>
 <img src="examples/lions/basquiat_output.png" width="192"/>
-<img src="examples/lions/styles/basquiat_crop.jpg" width="192"/>  
+<img src="examples/lions/styles/basquiat_crop.jpg" width="192"/>
 
 <img src="examples/lions/calliefink_output.png" width="192"/>
 <img src="examples/lions/styles/calliefink_crop.jpg" width="192"/>
@@ -64,15 +64,15 @@ More than one style image can be used to blend multiple artistic styles.
 <p align="center">
 <img src="examples/multiple_styles/tubingen_starry_scream.png" height="192px">
 <img src="examples/multiple_styles/tubingen_scream_kandinsky.png" height="192px">
-<img src="examples/multiple_styles/tubingen_starry_seated.png" height="192px">  
+<img src="examples/multiple_styles/tubingen_starry_seated.png" height="192px">
 
 <img src="examples/multiple_styles/tubingen_seated_kandinsky.png.png" height="192px">
 <img src="examples/multiple_styles/tubingen_afremov_grey.png" height="192px">
 <img src="examples/multiple_styles/tubingen_basquiat_nielly.png" height="192px">
 </p>
 
-*Top row (left to right)*: [The Starry Night](https://www.wikiart.org/en/vincent-van-gogh/the-starry-night-1889) + [The Scream](https://www.wikiart.org/en/edvard-munch/the-scream-1893), [The Scream](https://www.wikiart.org/en/edvard-munch/the-scream-1893) + [Composition VII](https://www.wikiart.org/en/wassily-kandinsky/composition-vii-1913), [Seated Nude](http://www.pablopicasso.org/seated-nude.jsp) + [Composition VII](https://www.wikiart.org/en/wassily-kandinsky/composition-vii-1913)  
-*Bottom row (left to right)*: [Seated Nude](http://www.pablopicasso.org/seated-nude.jsp) + [The Starry Night](https://www.wikiart.org/en/vincent-van-gogh/the-starry-night-1889), [Oversoul](http://alexgrey.com/art/paintings/soul/oversoul/) + [Freshness of Cold](https://afremov.com/FRESHNESS-OF-COLD-PALETTE-KNIFE-Oil-Painting-On-Canvas-By-Leonid-Afremov-Size-30-x40.html), [David Bowie](http://www.francoise-nielly.com/index.php/galerie/index/56) + [Skull](https://www.wikiart.org/en/jean-michel-basquiat/head) 
+*Top row (left to right)*: [The Starry Night](https://www.wikiart.org/en/vincent-van-gogh/the-starry-night-1889) + [The Scream](https://www.wikiart.org/en/edvard-munch/the-scream-1893), [The Scream](https://www.wikiart.org/en/edvard-munch/the-scream-1893) + [Composition VII](https://www.wikiart.org/en/wassily-kandinsky/composition-vii-1913), [Seated Nude](http://www.pablopicasso.org/seated-nude.jsp) + [Composition VII](https://www.wikiart.org/en/wassily-kandinsky/composition-vii-1913)
+*Bottom row (left to right)*: [Seated Nude](http://www.pablopicasso.org/seated-nude.jsp) + [The Starry Night](https://www.wikiart.org/en/vincent-van-gogh/the-starry-night-1889), [Oversoul](http://alexgrey.com/art/paintings/soul/oversoul/) + [Freshness of Cold](https://afremov.com/FRESHNESS-OF-COLD-PALETTE-KNIFE-Oil-Painting-On-Canvas-By-Leonid-Afremov-Size-30-x40.html), [David Bowie](http://www.francoise-nielly.com/index.php/galerie/index/56) + [Skull](https://www.wikiart.org/en/jean-michel-basquiat/head)
 
 ### Style Interpolation
 When using multiple style images, the degree of blending between the images can be controlled.
@@ -87,7 +87,7 @@ When using multiple style images, the degree of blending between the images can 
 <img src="examples/style_interpolation/taj_mahal_afremov_grey_2_8.png" height="178px">
 </p>
 
-*Top row (left to right)*: content image, .2 [The Starry Night](https://www.wikiart.org/en/vincent-van-gogh/the-starry-night-1889) + .8 [The Scream](https://www.wikiart.org/en/edvard-munch/the-scream-1893), .8 [The Starry Night](https://www.wikiart.org/en/vincent-van-gogh/the-starry-night-1889) + .2 [The Scream](https://www.wikiart.org/en/edvard-munch/the-scream-1893)  
+*Top row (left to right)*: content image, .2 [The Starry Night](https://www.wikiart.org/en/vincent-van-gogh/the-starry-night-1889) + .8 [The Scream](https://www.wikiart.org/en/edvard-munch/the-scream-1893), .8 [The Starry Night](https://www.wikiart.org/en/vincent-van-gogh/the-starry-night-1889) + .2 [The Scream](https://www.wikiart.org/en/edvard-munch/the-scream-1893)
 *Bottom row (left to right)*: .2 [Oversoul](http://alexgrey.com/art/paintings/soul/oversoul/) + .8 [Freshness of Cold](https://afremov.com/FRESHNESS-OF-COLD-PALETTE-KNIFE-Oil-Painting-On-Canvas-By-Leonid-Afremov-Size-30-x40.html), .5 [Oversoul](http://alexgrey.com/art/paintings/soul/oversoul/) + .5 [Freshness of Cold](https://afremov.com/FRESHNESS-OF-COLD-PALETTE-KNIFE-Oil-Painting-On-Canvas-By-Leonid-Afremov-Size-30-x40.html), .8 [Oversoul](http://alexgrey.com/art/paintings/soul/oversoul/) + .2 [Freshness of Cold](https://afremov.com/FRESHNESS-OF-COLD-PALETTE-KNIFE-Oil-Painting-On-Canvas-By-Leonid-Afremov-Size-30-x40.html)
 
 ### Transfer style but not color
@@ -125,17 +125,17 @@ Style can be transferred to semantic segmentations in the content image.
 <p align="center">
 <img src="examples/segmentation/00110.jpg" height="180px">
 <img src="examples/segmentation/00110_mask.png" height="180px">
-<img src="examples/segmentation/00110_output.png" height="180px">  
+<img src="examples/segmentation/00110_output.png" height="180px">
 <img src="examples/segmentation/00017.jpg" height="180px">
 <img src="examples/segmentation/00017_mask.png" height="180px">
-<img src="examples/segmentation/00017_output.png" height="180px">  
+<img src="examples/segmentation/00017_output.png" height="180px">
 
 <img src="examples/segmentation/00768.jpg" height="180px">
 <img src="examples/segmentation/00768_mask.png" height="180px">
 <img src="examples/segmentation/00768_output.png" height="180px">
 <img src="examples/segmentation/02630.png" height="180px">
 <img src="examples/segmentation/02630_mask.png" height="180px">
-<img src="examples/segmentation/02630_output.png" height="180px"> 
+<img src="examples/segmentation/02630_output.png" height="180px">
 </p>
 
 Multiple styles can be transferred to the foreground and background of the content image.
@@ -166,9 +166,9 @@ Animations can be rendered by applying the algorithm to each source frame.  For 
 <br>
 <img src="examples/video/weights.gif">
 <img src="examples/video/output.gif">
-</p>  
+</p>
 
-*Top row (left to right)*: source frames, ground-truth optical flow visualized      
+*Top row (left to right)*: source frames, ground-truth optical flow visualized
 *Bottom row (left to right)*: disoccluded regions and motion boundaries, stylized frames
 
 Big thanks to Mike Burakoff	for finding a bug in the video rendering.
@@ -187,7 +187,7 @@ Here we reproduce Figure 6 from the first paper:
 <img src="examples/initialization/init_random_4.png" height="192">
 </p>
 
-*Top row (left to right)*: Initialized with the content image, the style image, white noise (RNG seed 1)  
+*Top row (left to right)*: Initialized with the content image, the style image, white noise (RNG seed 1)
 *Bottom row (left to right)*: Initialized with white noise (RNG seeds 2, 3, 4)
 
 ### Layer Representations
@@ -239,10 +239,13 @@ Here we reproduce Figure 3 from [the original paper](https://arxiv.org/abs/1508.
 </tr>
 </table>
 
-*Rows*: increasing subsets of CNN layers; i.e. 'conv4_1' means using 'conv1_1', 'conv2_1', 'conv3_1', 'conv4_1'.   
+*Rows*: increasing subsets of CNN layers; i.e. 'conv4_1' means using 'conv1_1', 'conv2_1', 'conv3_1', 'conv4_1'.
 *Columns*: alpha/beta ratio of the the content and style reconstruction (see Content / Style Tradeoff).
 
 ## Setup
+
+[Easy Mac setup](./setup.md#mac)
+
 #### Dependencies:
 * [tensorflow](https://github.com/tensorflow/tensorflow)
 * [opencv](http://opencv.org/downloads.html)
@@ -251,7 +254,7 @@ Here we reproduce Figure 3 from [the original paper](https://arxiv.org/abs/1508.
 * [CUDA](https://developer.nvidia.com/cuda-downloads) 7.5+
 * [cuDNN](https://developer.nvidia.com/cudnn) 5.0+
 
-#### After installing the dependencies: 
+#### After installing the dependencies:
 * Download the [VGG-19 model weights](http://www.vlfeat.org/matconvnet/pretrained/) (see the "VGG-VD models from the *Very Deep Convolutional Networks for Large-Scale Visual Recognition* project" section). More info about the VGG-19 network can be found [here](http://www.robots.ox.ac.uk/~vgg/research/very_deep/).
 * After downloading, copy the weights file `imagenet-vgg-verydeep-19.mat` to the project directory.
 
@@ -289,8 +292,8 @@ bash stylize_video.sh ./video_input/video.mp4 ./styles/kandinsky.jpg
 
 ### Advanced Usage
 #### Single Image or Video Frames
-1. Copy content images to the default image content directory `./image_input` or copy video frames to the default video content directory `./video_input`  
-2. Copy 1 or more style images to the default style directory `./styles`  
+1. Copy content images to the default image content directory `./image_input` or copy video frames to the default video content directory `./video_input`
+2. Copy 1 or more style images to the default style directory `./styles`
 3. Run the command with specific arguments:
 ```
 python neural_style.py <arguments>
@@ -357,7 +360,7 @@ python neural_style.py --video \
 
 #### Optimization Arguments
 * `--optimizer`: Loss minimization optimizer.  L-BFGS gives better results.  Adam uses less memory. *Choices*: `lbfgs`, `adam`. *Default*: `lbfgs`
-* `--learning_rate`: Learning-rate parameter for the Adam optimizer. *Default*: `1e0`  
+* `--learning_rate`: Learning-rate parameter for the Adam optimizer. *Default*: `1e0`
 
 <p align="center">
 <img src="examples/equations/plot.png" width="360px">
@@ -365,7 +368,7 @@ python neural_style.py --video \
 
 * `--max_iterations`: Max number of iterations for the Adam or L-BFGS optimizer. *Default*: `1000`
 * `--print_iterations`: Number of iterations between optimizer print statements. *Default*: `50`
-* `--content_loss_function`: Different constants K in the content loss function. *Choices*: `1`, `2`, `3`. *Default*: `1` 
+* `--content_loss_function`: Different constants K in the content loss function. *Choices*: `1`, `2`, `3`. *Default*: `1`
 
 <p align="center">
 <img src="examples/equations/content.png" width="321px">
@@ -374,7 +377,7 @@ python neural_style.py --video \
 #### Video Frame Arguments
 * `--video`: Boolean flag indicating if the user is creating a video.
 * `--start_frame`: First frame number. *Default*: `1`
-* `--end_frame`: Last frame number. *Default*: `1` 
+* `--end_frame`: Last frame number. *Default*: `1`
 * `--first_frame_type`: Image used to initialize the network during the rendering of the first frame. *Choices*: `content`, `random`, `style`. *Default*: `random`
 * `--init_frame_type`: Image used to initialize the network during the every rendering after the first frame. *Choices*: `prev_warped`, `prev`, `content`, `random`, `style`. *Default*: `prev_warped`
 * `--video_input_dir`: Relative or absolute directory path to input frames. *Default*: `./video_input`
@@ -389,7 +392,7 @@ python neural_style.py --video \
 
 ## Questions and Errata
 
-Send questions or issues:  
+Send questions or issues:
 <img src="examples/equations/email.png">
 
 ## Memory
@@ -403,7 +406,7 @@ These produce better and faster results, but can consume a lot of memory. You ca
 
 ## Implementation Details
 All images were rendered on a machine with:
-* **CPU:** Intel Core i7-6800K @ 3.40GHz × 12 
+* **CPU:** Intel Core i7-6800K @ 3.40GHz × 12
 * **GPU:** NVIDIA GeForce GTX 1080/PCIe/SSE2
 * **OS:** Linux Ubuntu 16.04.1 LTS 64-bit
 * **CUDA:** 8.0
@@ -413,7 +416,7 @@ All images were rendered on a machine with:
 
 ## Acknowledgements
 
-The implementation is based on the projects: 
+The implementation is based on the projects:
 * Torch (Lua) implementation 'neural-style' by [jcjohnson](https://github.com/jcjohnson)
 * Torch (Lua) implementation 'artistic-videos' by [manuelruder](https://github.com/manuelruder)
 

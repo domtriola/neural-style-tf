@@ -1,0 +1,9 @@
+# Python
+venv
+
+# IDE
+.vscode
+
+# Assets
+imagenet-vgg-verydeep-19.mat
+image_output
